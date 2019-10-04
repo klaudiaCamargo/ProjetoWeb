@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Hbsis - {{ titulo_pagina }}</title>
+        <link rel="stylesheet" href="../static/styleIndex.css">
+    </head>
+    <body>
+
+        <header class="cabecalho">
+            <div class="logo">
+                <a href="/">
+                    <img src="../static/img/logo.png" alt="">
+                </a>
+            </div>            
+            <div class="Menu">
+                <ul>
+                    <li>
+                        <a href="/cadastrar">Cadastrar Cerveja</a>
+                    </li>
+                    <li>
+                        <a href="/listar">Listar Cerveja</a>
+                    </li>
+                    <li>
+                        <a href="/fazer-pedido">Fazer Pedido</a>
+                    </li>                
+                </ul>     
+            </div>
+        </header>
+        <div id="body">
+            {% block conteudo %} 
+                
+            {% endblock %}
+        </div>
+    </body>
+</html>
