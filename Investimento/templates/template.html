@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/estilo.css">
+    <title>{{ titulo }}</title>
+    
+    <style>
+        #coluna1, #coluna2{
+            background-image: url("../static/img/laterais.jpg");
+            border: none;
+    }
+        .no-gutters {
+            margin-right: 0;
+            margin-left: 0;
+            padding-right: 0;
+            padding-left: 0;
+    }
+        .cadastrar_fixa{
+            margin: 0;
+            height: auto;
+        }
+
+        .form_invest{
+            margin: 0 auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid rgb(26, 24, 138);
+            border-radius: 2em;
+        }
+
+        label {
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+
+        input, textarea {
+            font: 1em sans-serif;
+            width: 300px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+
+        .button {
+            padding-left: 90px; 
+        }
+
+        button {  
+            margin-left: .5em;
+        }
+            
+    </style>
+
+
+</head>
+<body>
+    <header id="header">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+          <img src="../static/img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+          Home
+        </a>
+        <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="/fixa">Renda Fixa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/variavel">Renda Variavel</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="/saiba_mais"> {{titulo}} - Saiba Mais</a>
+                </li>
+            </ul>
+
+      </nav>
+        
+                    <!-- <header class="cabecalho">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="../static/img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li> 
+                                    <a href="/fixa"> Fixa</a>
+                                </li>
+                                <li>
+                                    <a href="/variavel">Variavel</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </header> -->
+        </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="coluna1" class="col-sm">
+           
+            </div>
+            <div class="col-10">
+
+            {% block conteudo %}
+
+            {% endblock %}
+            
+        </div>
+        <div id="coluna2" class="col-sm" class="rounded">
+         
+        </div>
+      </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

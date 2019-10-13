@@ -1,0 +1,63 @@
+
+
+
+/* body{
+    margin: 0;
+}
+
+.cabecalho{
+    width: 100%;
+    background: lightsalmon;
+    height: 10%;
+}
+
+.cabecalho .logo, .cabecalho .menu{
+    float: left;
+}
+
+.cabecalho .logo img{
+    margin: 10px 0 0 15px;
+    width: 4em;
+    height: 4em;
+}
+
+.cabecalho .menu{
+    width: 600px;    
+}
+
+.cabecalho .menu ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+}
+
+.cabecalho .menu ul li :hover{
+    background: palegreen;
+    display: inline-block;
+}
+
+.cabecalho .menu ul li :hover a{
+    color: salmon;
+    display: inline-block;
+}
+
+.cabecalho .menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: yellowgreen;
+    font-size: 12px;
+}
+
+.div_body{
+    width: 80%;
+    margin: 2em auto;
+    border: 2px solid #7a3c3c;
+}
+
+.home{
+
+    color: teal;
+    text-transform: uppercase ;
+}
+
+ */

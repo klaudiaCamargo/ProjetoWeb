@@ -1,0 +1,68 @@
+  {% extends "template.html" %}
+  
+  {% block conteudo %}
+  
+            <div id="cadastrar_fixa">
+              <h1>Renda Variavel</h1>
+                
+                <form class="form_invest" action="/enviar" method="post">
+              
+                  <h3> Investimento </h3>
+                  <div>
+                    <label for="aporte">Aporte: </label>
+                    <input type="text" id="aporte" />
+                  </div>
+                  <div>
+                    <label for="rentabilidade">Rentabilidade: </label>
+                    <input type="text" id="rentabilidade" />
+                  </div>
+                  
+                  <div>
+                    <label for="periodo">Periodo: </label>
+                    <input type="text" id="periodo" />
+                  </div>
+                  <hr>
+                  <h3> Carteira </h3>
+  
+                        <div>
+                            <label for="quantidade">Quantidade: </label>
+                            <input type="text" id="quantidade" />
+                          </div>
+                              <div>
+                                  <label for="rentabilidade_mensal">Rentabilidade Mensal: </label>
+                                  <input type="text" id="rentabilidade_mensal" />
+                              </div>
+                        <div>
+                            <label for="rentabilidade_anual">Rentabilidade Anual: </label>
+                            <input type="text" id="rentabilidade_anual" />
+                        </div>
+  
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo: </label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Selecione tipo...</option>
+                              <option>AÇÕES</option>
+                              <option>DERIVATIVOS</option>
+                              <option>ETF</option>
+                              <option>COMMODITIES</option>
+                              <option>MOEDAS</option>
+                            </select>
+                          </div>
+  
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                      </form>
+                      
+                      <ul>
+                        {% for i in novo_investimento %}
+                          <li>{{ i.nome }}</li>
+                        {% endfor %}
+                      </ul>
+          </div>
+
+  {% endblock %}
+     
+
+
+
